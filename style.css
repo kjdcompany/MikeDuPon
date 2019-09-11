@@ -1,0 +1,275 @@
+@font-face {
+    font-family: GreatVibes;
+    src: url(Font/GreatVibes-Regular.ttf)
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url(Font/Inconsolata-Regular.ttf)
+}
+
+@font-face {
+    font-family: Goudy;
+    src: url(Font/GoudyBookletter1911-Regular.ttf)
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Font/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(Font/Quicksand-Light.ttf)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    overflow-x: hidden;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    padding: 20px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+
+.main-nav ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: QuickSand;
+/*    text-transform: uppercase;*/
+    font-size: 1.2rem;
+    margin-right: 30px;
+    padding-top: 8px;
+}
+
+.logo {
+    padding-left: 20px;
+    font-family: GreatVibes;
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+}
+
+/*Banner*/
+.banner{
+    height: 100vh;
+    width: 100%;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1{
+    display: block;
+    font-family: Raleway;
+    font-size: 3.5rem;
+    position: relative;
+    color:white;
+    text-align: center;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+.banner button{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.banner button{
+    font-family: QuickSand;
+    margin-top: 15px;
+    background-color: transparent;
+    padding: 10px 45px;
+    font-size: 18px;
+    color: white;
+}
+
+.banner button:hover{
+    background-color: rgba(255,255,255,0.1);
+/*    color: black;*/
+    cursor: pointer;
+}
+
+/*My work*/
+.work{
+    background: url(images/light_grey.png) repeat;
+}
+
+.work h2{
+    font-family: Raleway;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.work p{
+    font-family: Goudy;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.gallery img{
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0 120px;
+}
+
+.work p{
+    background-color: transparent;
+    font-size: 18px;
+    color: black;
+    padding-top: 20px;
+}
+
+.work p a{
+    color: black;
+}
+
+/*About me*/
+
+#about_me h2{
+    font-family: Raleway;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.section-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px 120px;
+}
+
+.img-about h3{
+    text-align: center;
+    font-family: Goudy;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.section-about p{
+    padding-top: 1.5rem;
+    font-family: Goudy;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.section-about img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Contact*/
+
+#contact h2{
+    font-family: Raleway;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.section-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: Goudy;
+    font-size: 1.2rem;
+    padding: 10px 120px;
+}
+
+.section-contact ul{
+    list-style: none;
+}
+
+.info input{
+    font-size: 1.2rem;
+}
+
+.info .block-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0;
+}
+
+.info .message input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.email-box button{
+    font-family: QuickSand;
+    background-color: transparent;
+    padding: 5px 45px;
+    font-size: 1.2rem;
+    color: black;
+    display: flex;
+    margin: auto;
+    
+}
+
+/*footer*/
+
+footer{
+    background-color: gray;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul img{
+    height: 24px;
+    width: auto;
+    margin: 30px 20px 0px 20px;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p a{
+    color: white;
+    font-family: GreatVibes;
+    font-size: 1.3rem;
+}
